@@ -2,33 +2,28 @@ package task;
 
 public class Material {
 
-    private String name;
-    private float density;
+    private final String NAME;
+    private final float DENSITY;
 
-    public Material(String name, int density){
-        this.name = name;
-        this.density = density;
+    public Material(String NAME, int DENSITY){
+        this.NAME = NAME;
+        this.DENSITY = DENSITY;
     }
 
     public Material(){
-        this.name = "Moonstone";
-        this.density= 42;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        this(null,0);
     }
 
     public String toString(){
-        return this.name + ";" + this.density;
+        return this.NAME + ";" + this.DENSITY;
     }
 
-    public String getName() {
-        return name;
+    public String getNAME() {
+        return NAME;
     }
 
-    public float getDensity() {
-        return density;
+    public float getDENSITY() {
+        return DENSITY;
     }
 
 

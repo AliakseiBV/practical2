@@ -42,20 +42,14 @@ public class Subject {
     }
 
     public float getMass(){
-        return volume * material.getDensity();
+        return volume * material.getDENSITY();
     }
 
     public String toString(){
-        return this.name + ";"
-                + this.material.getName() + ";"
-                + this.material.getDensity() + ";"
-                + this.volume + ";"
+        return name + ";"
+                + material + ";"
+                + volume + ";"
                 + getMass();
     }
-
-    private static String numbersToString(int value){
-        return String.format("%d.%1d", value, value % 10);
-    }
-
 
 }
