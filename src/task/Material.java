@@ -2,12 +2,12 @@ package task;
 
 public class Material {
 
-    private final String NAME;
-    private final float DENSITY;
+    private final String name;
+    private final float density;
 
     public Material(String NAME, int DENSITY){
-        this.NAME = NAME;
-        this.DENSITY = DENSITY;
+        this.name = NAME;
+        this.density = DENSITY;
     }
 
     public Material(){
@@ -15,15 +15,15 @@ public class Material {
     }
 
     public String toString(){
-        return this.NAME + ";" + this.DENSITY;
+        return this.name + ";" + this.density;
     }
 
     public String getNAME() {
-        return NAME;
+        return name;
     }
 
-    public float getDENSITY() {
-        return DENSITY;
+    public float getDensity() {
+        return density;
     }
 
 

@@ -42,7 +42,7 @@ public class Subject {
     }
 
     public float getMass(){
-        return volume * material.getDENSITY();
+        return volume * material.getDensity();
     }
 
     public String toString(){
